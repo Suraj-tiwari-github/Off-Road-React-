@@ -28,12 +28,13 @@ const Navbar=()=>{
 
           <ul className="nav-icons">
             {socialLinks.map((social)=>{
-              const {href, icon}=social;
+              const {id,href, icon}=social;
               return (
-                <li>
+                <li key={id}>
                   <a
                     href={href}
                     target="_blank"
+                    rel='noreferrer '
                     className="nav-icon"
                   >
                     <i className={icon}></i>
